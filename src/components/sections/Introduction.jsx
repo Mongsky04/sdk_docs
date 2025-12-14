@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Introduction() {
   return (
-    <div className="flex flex-col gap-3">
+    <div id="introduction" className="flex flex-col gap-3">
       <div className="flex flex-col gap-1">
         <div className="bg-[#b6f500] flex items-center justify-center px-3 py-1 rounded-full w-fit">
           <p className="font-roboto font-normal leading-5 text-[#050505] text-[13px]">

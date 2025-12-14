@@ -6,7 +6,7 @@ import Footer from './sections/Footer';
 
 export default function MainContent() {
   return (
-    <main className="flex flex-col gap-9 px-10 py-8 flex-1 overflow-y-auto max-w-[1440px] mx-auto w-full">
+    <main className="flex flex-col gap-9 px-10 py-8 flex-1 max-w-[904px] mx-auto w-full">
       <div className="max-w-[1440px] mx-auto w-full flex flex-col gap-9">
         <Introduction />
         

@@ -10,7 +10,9 @@ function App() {
       <Header />
       <div className="flex flex-1 overflow-hidden">
         <Sidebar />
-        <MainContent />
+        <div className="flex flex-1 overflow-y-auto">
+          <MainContent />
+        </div>
         <RightSidebar />
       </div>
     </div>

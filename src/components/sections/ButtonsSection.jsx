@@ -9,7 +9,7 @@ export default function ButtonsSection() {
           2.
         </p>
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 w-full">
         <div className="flex flex-col gap-1">
           <p className="font-roboto font-semibold leading-[29px] text-[#fbfbfb] text-[19px]">
             Buttons and Their Functions (24 Buttons), Number Buttons (0–9)

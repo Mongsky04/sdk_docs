@@ -9,7 +9,7 @@ import AddFeature from './AddFeature';
 
 export default function DeviceSpecifications() {
   return (
-    <div className="flex flex-col gap-9">
+    <div id="device-specifications" className="flex flex-col gap-9">
       <div className="flex flex-col gap-3">
         <div className="flex flex-col gap-1">
           <div className="bg-[#b6f500] flex items-center justify-center px-3 py-1 rounded-full w-fit">
