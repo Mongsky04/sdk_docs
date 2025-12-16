@@ -1,5 +1,5 @@
 import React from 'react';
-import { mainContentAssets } from '../../constants/assets';
+import { mainContentAssets } from '../../../constants/assets';
 
 const functionButtonsData = [
   { title: 'C (Clear)', desc: 'This button clears the display and removes any stored price or summation memory. It is useful when starting a new transaction or resetting the system' },

@@ -1,5 +1,5 @@
 import React from 'react';
-import { mainContentAssets } from '../../constants/assets';
+import { mainContentAssets } from '../../../constants/assets';
 
 const StepItem = ({ title, desc }) => (
   <div className="flex flex-col gap-1">

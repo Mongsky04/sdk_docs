@@ -1,19 +1,23 @@
-import Header from './components/Header'
-import Sidebar from './components/Sidebar'
-import RightSidebar from './components/RightSidebar'
-import MainContent from './components/MainContent'
+import { useState } from 'react'
+import Header from './layouts/Header'
+import Sidebar from './layouts/Sidebar'
+import RightSidebar from './layouts/RightSidebar'
+import MainContent from './layouts/MainContent'
 import './App.css'
 
 function App() {
+  const [activePage, setActivePage] = useState('overview');
+  const [rightSidebarSections, setRightSidebarSections] = useState([]);
+
   return (
     <div className="h-screen bg-black flex flex-col overflow-hidden">
       <Header />
       <div className="flex flex-1 overflow-hidden">
-        <Sidebar />
+        <Sidebar activePage={activePage} setActivePage={setActivePage} />
         <div className="flex flex-1 overflow-y-auto">
-          <MainContent />
+          <MainContent activePage={activePage} setRightSidebarSections={setRightSidebarSections} setActivePage={setActivePage} />
         </div>
-        <RightSidebar />
+        <RightSidebar sections={rightSidebarSections} />
       </div>
     </div>
   )

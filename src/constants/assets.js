@@ -7,9 +7,13 @@ import githubIcon from '../assets/github-icon.svg';
 // Sidebar Assets
 import flutterIcon from '../assets/flutter-icon.svg';
 import chevronIcon from '../assets/chevron-icon.svg';
-import docIcon from '../assets/doc-icon.svg';
-import docIcon1 from '../assets/doc-icon-1.svg';
-import docIcon2 from '../assets/doc-icon-2.svg';
+import clipboardIcon from '../assets/Clipboard-Icon.svg';
+import clipboardIcon1 from '../assets/Clipboard-Icon(1).svg';
+import clipboardIcon2 from '../assets/Clipboard-Icon(2).svg';
+import clipboardIcon3 from '../assets/Clipboard-Icon(3).svg';
+import clipboardIcon4 from '../assets/Clipboard-Icon(4).svg';
+import clipboardIcon5 from '../assets/Clipboard-Icon(5).svg';
+import clipboardIcon6 from '../assets/Clipboard-Icon(6).svg';
 
 // RightSidebar Assets
 import kgitonLogo from '../assets/kgiton-logo.svg';
@@ -35,9 +39,13 @@ export const headerAssets = {
 export const sidebarAssets = {
   flutterIcon,
   chevronIcon,
-  docIcon,
-  docIcon1,
-  docIcon2
+  clipboardIcon,
+  clipboardIcon1,
+  clipboardIcon2,
+  clipboardIcon3,
+  clipboardIcon4,
+  clipboardIcon5,
+  clipboardIcon6
 };
 
 export const rightSidebarAssets = {

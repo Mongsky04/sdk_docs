@@ -1,5 +1,5 @@
 import React from 'react';
-import { mainContentAssets } from '../../constants/assets';
+import { mainContentAssets } from '../../../constants/assets';
 
 export default function ButtonsSection() {
   return (
