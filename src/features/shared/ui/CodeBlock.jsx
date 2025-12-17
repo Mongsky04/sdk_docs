@@ -76,7 +76,7 @@ const CodeBlock = ({ language, code, showLineNumbers = true }) => {
     <div className="flex flex-col w-full px-[76px] py-6">
       <div className="flex flex-col rounded-2xl w-full border border-[#434343] overflow-hidden">
         {/* Header */}
-        <div className="flex items-center justify-between px-4 py-3 bg-[#151515] border-b border-[#434343]">
+        <div className="flex items-center justify-between px-4 py-3 bg-[#151515] rounded-2xl border-[#434343]">
           <p className="font-mono text-sm leading-6 text-[#e1e4e8]">
             {language}
           </p>
@@ -94,7 +94,7 @@ const CodeBlock = ({ language, code, showLineNumbers = true }) => {
         </div>
 
         {/* Code with Syntax Highlighting */}
-        <div className="bg-[#2d2d2d]">
+        <div className="bg-[#2d2d2d] border-t border-[#434343] rounded-2xl overflow-x-auto">
           <SyntaxHighlighter
             language={language.toLowerCase()}
             style={customTheme}

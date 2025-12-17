@@ -88,7 +88,11 @@ const CodeBlockWithTabs = ({ tabs, showLineNumbers = true }) => {
                 activeTab === tab.id ? 'bg-[#050505]' : ''
               }`}
             >
-              {tab.icon}
+              <img 
+                src={activeTab === tab.id ? tab.iconActive : tab.iconInactive} 
+                alt={tab.label} 
+                className="w-6 h-6 transition-all"
+              />
               <p
                 className={`font-roboto font-normal text-base leading-6 ${
                   activeTab === tab.id ? 'text-white' : 'text-[#727272]'
@@ -103,7 +107,7 @@ const CodeBlockWithTabs = ({ tabs, showLineNumbers = true }) => {
         {/* Code Block */}
         <div className="flex flex-col rounded-2xl w-full border border-[#434343] overflow-hidden bg-[#151515]">
           {/* Header */}
-          <div className="flex items-center justify-between px-4 py-3 border-b border-[#434343]">
+          <div className="flex items-center justify-between px-4 py-3 rounded-2xl border-[#434343]">
             <p className="font-mono text-sm leading-6 text-white">
               {activeTabData.language}
             </p>
@@ -121,7 +125,7 @@ const CodeBlockWithTabs = ({ tabs, showLineNumbers = true }) => {
           </div>
 
           {/* Code with Syntax Highlighting */}
-          <div className="bg-[#2d2d2d] border border-[#434343] rounded-2xl overflow-x-auto">
+          <div className="bg-[#2d2d2d] border-t border-[#434343] rounded-2xl overflow-x-auto">
             <SyntaxHighlighter
               language={activeTabData.language.toLowerCase()}
               style={customTheme}

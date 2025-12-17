@@ -1,7 +1,9 @@
 import { SectionTitle, StepContainer, InlineCode, PermissionItem } from '../components';
 import { CodeBlockWithTabs } from '../../shared/ui';
-import androidIcon from '../../../assets/android-icon.svg';
-import appleIcon from '../../../assets/apple-icon.svg';
+import androidIconActive from '../../../assets/mingcute_android-fill(2).svg';
+import androidIconInactive from '../../../assets/mingcute_android-fill(1).svg';
+import appleIconActive from '../../../assets/mdi_apple(2).svg';
+import appleIconInactive from '../../../assets/mdi_apple(1).svg';
 
 export default function PlatformSetup() {
   const androidXmlCode = `<uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
@@ -16,14 +18,16 @@ export default function PlatformSetup() {
       label: 'Android',
       language: 'xml',
       code: androidXmlCode,
-      icon: <img src={androidIcon} alt="Android" className="w-6 h-6" />
+      iconActive: androidIconActive,
+      iconInactive: androidIconInactive
     },
     {
       id: 'ios',
       label: 'IOS',
       language: 'swift',
       code: iosCode,
-      icon: <img src={appleIcon} alt="iOS" className="w-6 h-6" />
+      iconActive: appleIconInactive,
+      iconInactive: appleIconActive
     }
   ];
 

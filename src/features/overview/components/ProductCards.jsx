@@ -14,7 +14,7 @@ export default function ProductCards() {
       {products.map((product, index) => (
         <div 
           key={index} 
-          className={`group flex-1 bg-[#585858] border border-[#434343] flex flex-col gap-2 overflow-hidden rounded-2xl cursor-pointer transition-all duration-300 hover:scale-105 hover:bg-[#b6f500] hover:border-[#b6f500] hover:shadow-[0_0_20px_rgba(182,245,0,0.5)]`}
+          className={`group flex-1 bg-[#585858] border border-[#434343] flex flex-col gap-2 overflow-hidden rounded-2xl vsctransition-all duration-300 hover:scale-105 hover:bg-[#b6f500] hover:border-[#b6f500] hover:shadow-[0_0_20px_rgba(182,245,0,0.5)]`}
         >
           <div className="bg-[#050505] flex flex-col gap-4 items-center pb-3 pt-4 px-3">
             <div className="w-10 h-10">
